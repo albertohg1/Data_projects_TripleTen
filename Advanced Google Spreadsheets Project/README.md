@@ -44,3 +44,6 @@ This project involved analyzing the vacation rental market in the Manhattan boro
 
 ## Tools Used
 - **Google Sheets**: Advanced data filtering, pivot tables, and calculated fields.
+
+## View My Project
+You can view my project [here](https://docs.google.com/spreadsheets/d/1HWwGgq8fXqq4GSRoD2cQdvMtTMBXUMwprveYKfpIZN8/edit?usp=sharing).
