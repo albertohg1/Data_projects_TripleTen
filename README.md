@@ -1,10 +1,59 @@
-# Data_projects_TripleTen
-These are some of the projects I worked on while doing a Business Intelligence Analytics Bootcamp at TripleTen
+\# Superstore Tableau Dashboard Project
 
+\#\# Project Overview  
+In this project, I developed a comprehensive analysis for the CEO of Superstore to help them understand what is causing customers to return their orders. The goal was to find insights into why returns happen and how they can be minimized. The project included building a Tableau dashboard and storytelling component to visualize the findings and communicate actionable insights effectively.
 
-| Project number | Title | Description |
-| :-----------: | ----------- |----------- |
-| 1 |[NYC Airbnb Data](https://github.com/albertohg1/Data_projects_TripleTen/tree/533da27ad0ff6c746b1778449451f7d2ae7ad3cc/Advanced%20Google%20Spreadsheets%20Project)| Analyzed Airbnb listings in Manhattan, NYC using advanced Google Sheets techniques to identify optimal vacation rental investments by cleaning data, creating pivot tables to calculate occupancy rates, and estimating annual revenue based on property characteristics and rental patterns. |
-| 2 | [Case Study Analysis: SQL; The Zuber Database](https://github.com/albertohg1/Data_projects_TripleTen/tree/0684ac54313495987d679df725f4c5ba6a89810e/Case%20Study%20Analysis%20SQL-The%20Zuber%20Datebase)| Leveraged SQL and advanced data analysis techniques to analyze ride-sharing data for Zuber in Chicago to identify patterns in taxi rides, explore the impact of weather on ride duration, and compare performance across companies. |
-| 3 | Case Study: Strategic Insights into Superstore Returns: A Tableau Dashboard Analysis | Conducted data-driven evaluations of Superstore operations using advanced Tableau visualizations, performing data joins, creating calculated fields, and building dynamic dashboards to identify profit/loss centers, optimize product and advertising strategies, and assess return rates. |
-| 4 | Case Study: Shopify App Performance Analysis Using Power BI | Developed interactive Power BI dashboards to analyze Shopify app data, utilizing DAX expressions for calculated fields, establishing data relationships between tables, and creating advanced visualizations such as KPI cards, line charts, and scatterplots to evaluate app performance, review dynamics, and developer responsiveness. |
+\#\# Problem Statement  
+The main issue facing the Superstore was a high volume of returned orders. Through this analysis, I sought to identify:  
+\- Key drivers behind returns  
+\- Correlations between returns and various factors such as product category, customer behavior, and geographic distribution  
+\- Potential seasonal patterns impacting return rates
+
+\#\# Dataset Used  
+The dataset consisted of two tables:  
+1\. \*\*Orders Table\*\*: Containing data about customer orders, including product, region, customer ID, sales, and profits.  
+2\. \*\*Returns Table\*\*: Containing information about whether each order was returned (Yes/No).
+
+The two tables were joined using a \*\*LEFT JOIN\*\*, ensuring that we could track both returned and non-returned orders.
+
+\#\# Analytical Approach  
+\#\#\# 1\. Data Cleaning:  
+\- A calculated field was created to convert null values in the "Returned" column to 0 and "Yes" values to 1, allowing us to compute return rates.  
+\- Filtered out customers with only one order to focus on frequent customers with a pattern of returns.
+
+\#\#\# 2\. Visual Analysis:  
+Several key visualizations were built to analyze the return rates from different perspectives:
+
+\- \*\*Scatter Plot \- Sales vs. Returns\*\*: Demonstrates whether high sales correlate with high returns across product subcategories.  
+\- \*\*Bar Chart \- Return Rate by Category\*\*: Visualizes the return rates by product category (Furniture, Technology, Office Supplies).  
+\- \*\*Bar Chart \- Return Rate by Customer\*\*: Highlights the customers with the highest return rates, allowing the store to identify customer behavior.  
+\- \*\*Map \- Return Rate by State\*\*: Geographically displays return rates, identifying states where returns are more prevalent.  
+\- \*\*Line Graph \- Return Rate by Month\*\*: Analyzes return rates by month to detect any seasonal patterns.  
+\- \*\*Combined Line and Bar Chart \- Sales vs. Return Rate by Month\*\*: Shows the trend of sales alongside return rates over time.  
+\- \*\*Lollipop Chart \- Profits vs Return Rate by Region\*\*: Combines profits and return rates by region to assess performance from both perspectives.
+
+\#\# Findings and Insights  
+1\. \*\*High Return Rate in Specific Categories\*\*: Technology products had the highest return rate (27.3%), followed by Office Supplies and Furniture, which indicates that the store might need to focus on product quality or set better customer expectations in these categories.  
+     
+2\. \*\*Geographic Insights\*\*: The map revealed that certain regions, particularly the West and East, had significantly higher return rates compared to other areas.
+
+3\. \*\*Seasonal Trends\*\*: The analysis indicated higher return rates in September and March, suggesting potential seasonal effects on returns.
+
+4\. \*\*Customer Behavior\*\*: Some customers consistently had a 100% return rate, which points to a pattern that might need special attention (e.g., targeted communication or incentive programs to reduce returns).
+
+5\. \*\*Sales vs. Returns Correlation\*\*: The scatter plot of sales vs returns showed that higher sales didn’t necessarily mean higher returns, suggesting that other factors besides volume were contributing to returns.
+
+\#\# Technical Skills Used  
+\- \*\*Tableau\*\*: For creating data visualizations, dashboards, and a Tableau Story for presenting findings.  
+\- \*\*Data Cleaning\*\*: Using calculated fields and joins to clean and prepare data for analysis.  
+\- \*\*Statistical Analysis\*\*: Identifying trends, patterns, and correlations in data using advanced Tableau features like dual-axis charts and combined graphs.
+
+\#\# Tableau Links  
+\- \*\*Tableau Dashboard\*\*: \[Link to Dashboard\](https://public.tableau.com/views/Sprint5StorytellingwithDataProject-JoseAlbertoHernandez/ReturnRateAnalysis?:language=en-US\&publish=yes&:sid=&:redirect=auth&:display\_count=n&:origin=viz\_share\_link)  
+\- \*\*Tableau Story\*\*: \[Link to Tableau Story\](https://public.tableau.com/views/Sprint5StorytellingwithDataProject-JoseAlbertoHernandez/SuperstoreReturnRateAnalysis2?:language=en-US\&publish=yes&:sid=&:redirect=auth&:display\_count=n&:origin=viz\_share\_link)  
+\- \*\*Video Presentation\*\*: \[Link to Video Presentation\](https://drive.google.com/file/d/1-0GpFbgr9PZ3vmY2bcvyxmKP42r\_hl0F/view?usp=sharing)
+
+\---
+
+This project helped the Superstore CEO gain insights into the causes of returns and identify potential strategies for reducing them, thus improving profitability and customer satisfaction.
+
