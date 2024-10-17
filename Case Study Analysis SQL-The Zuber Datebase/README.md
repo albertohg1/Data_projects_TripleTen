@@ -60,4 +60,4 @@ The analysis aimed to address several key questions about Zuber's ride-sharing o
 - **Grouping and Aggregation**: Used to count rides by company and analyze ride frequencies over time.
 
 ## View My Project
-You can view the screenshots and the SQL queries used for the project [Case Study Analysis SQL - The Zuber Database](https://docs.google.com/presentation/d/1BEpM2VFgCCkYwI12P7ozadsQQodZP7uzLpevDKLuNxY/edit?usp=sharing).
+You can view the screenshots and the SQL queries used for the project [Case Study Analysis SQL - The Zuber Database](https://drive.google.com/file/d/1AcLPzHi8XWutI4IhkIfosj0-wxoVVTqk/view?usp=sharing).
